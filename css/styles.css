@@ -1,0 +1,360 @@
+html {
+  background-color: #232024;
+  line-height: 1.5;
+}
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "bad-font";
+  src: url("fonts/bad-font.eot");
+  src: url("fonts/bad-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/bad-font.woff2") format("woff2"),
+    url("fonts/bad-font.woff") format("woff"),
+    url("fonts/bad-font.ttf") format("truetype"),
+    url("fonts/bad-font.svg#pt_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* End Custom Fonts */
+
+body {
+  /* font-family: "bad-font", sans-serif; */
+  font-family: roboto, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Banner Overlay */
+.image-banner {
+  position: relative;
+}
+
+.image-banner img {
+  display: block;
+}
+
+.banner-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.banner-description p {
+  margin: 0;
+}
+/* End Banner Overlay */
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+header {
+  padding-top: 20px;
+  background-color: #232024;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  margin: 0;
+}
+
+/* site navigation */
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav a {
+  display: block;
+  color: #9600bb;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #424242;
+  border-bottom: none;
+}
+
+.site-nav a:hover {
+  background-color: #424242;
+}
+
+/* end site navigation */
+
+.content-area {
+  border-top: 2px solid #424242;
+  border-bottom: 2px solid #424242;
+  background-color: #303030;
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.main-area h2 {
+  font-size: 200%;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-shadow: 1px 3px 3px black;
+  text-transform: uppercase;
+}
+
+.main-area p {
+  text-align: left;
+  text-indent: 25px;
+}
+
+.birds {
+  background: #404040 url("../images/image.JPG") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 20px;
+}
+
+.birds p {
+  margin: 0;
+  background-color: #242424;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  text-indent: 0;
+  text-align: center;
+  padding: 20px 40px;
+  font-weight: bold;
+}
+
+/* Table styles */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.col-item-name {
+  width: 60%;
+}
+
+.col-quantity {
+  width: 20%;
+}
+
+.col-price {
+  width: 20%;
+}
+
+table th {
+  text-align: left;
+  background-color: #404040;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+table th,
+table td {
+  border: 1px solid #404040;
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #2f2c31;
+}
+
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+  text-align: center;
+}
+
+table.grocery-list {
+  margin-bottom: 20px;
+}
+
+/* End table styles */
+
+/* Form Styles */
+
+form {
+  background-color: #404040;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.hidden-label {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input,
+select {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid #8a8a8a;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+  border: 2px solid #64486d;
+  box-shadow: inset 0px 1px 2px #64486d;
+  outline: none;
+}
+
+input[type="submit"] {
+  color: white;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #9600bb;
+  padding: 10px 0;
+  border: 1px solid #9100b6;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  outline: none;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  border: 1px solid #cc00ff;
+  background-color: #9100b6;
+}
+
+input[type="submit"]:focus {
+  background-color: #780096;
+}
+
+.checkbox-text {
+  font-size: 85%;
+  color: #949494;
+}
+
+/* End Form Styles */
+
+/* UI Menu */
+.ui-menu {
+  margin-bottom: 20px;
+}
+
+.ui-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-menu li {
+  float: left;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.ui-menu a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/sprites.png);
+  background-size: 200px 300px;
+  text-indent: -99999px;
+  background-repeat: no-repeat;
+}
+
+.ui-home a:hover {
+  background-position: -100px 0;
+}
+
+.ui-profile a {
+  background-position: 0 -100px;
+}
+
+.ui-profile a:hover {
+  background-position: -100px -100px;
+}
+
+.ui-settings a {
+  background-position: 0 -200px;
+}
+
+.ui-settings a:hover {
+  background-position: -100px -200px;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  padding: 20px 40px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 85%;
+  background-color: #424242;
+  background-image: linear-gradient(to bottom, #424242, #303030);
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: #999;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
